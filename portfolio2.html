@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ziyad's Portfolio</title>
+  <link rel="stylesheet" href="port2.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Portfolio.</div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="hero fade-in" id="home">
+    <div class="hero-img">
+      <img src="photo.jpg" alt="Profile Photo" />
+    </div>
+    <div class="hero-text">
+      <h2>Hey I'm <span class="name">Ziyad</span></h2>
+      <p class="tagline">Aspiring Developer | B.Com(CA) Graduate</p>
+      <h3>I'm a <span class="highlight">Student</span></h3>
+      <p>I'm from Madurai. I completed my Bachelor's of Commerce from The American College, with a focus on Computer Applications. In the short term, I'm aiming to join a reputed company where I can learn and contribute. Over time, I hope to grow into a strong position where I can build my career and help the organization succeed.</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/ziyad-a-20" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/ziyad-a-324171366" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://instagram.com/sweetbuxxle" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="mailto:ziyad.official.a@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+
+      <a href="ziyad_resume.pdf" class="btn view-btn" target="_blank">View Resume</a>
+      <a href="#contact" class="btn" style="margin-left: 10px;">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section fade-in">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Commerce in Computer Application</strong><br>The American College, 2023–2026</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <h3>📘 Library Management System</h3>
+        <p>Manage books, categories, and borrowing with Flask + MySQL.</p>
+        <a href="https://github.com/ziyad-a-20/Library-Management-System.git" target="_blank" class="project-btn">
+          <i class="fas fa-link"> View on GitHub</i>
+        </a>
+      </div>
+      <div class="project-card">
+        <h3>💉 Blood Donation Portal</h3>
+        <p>Track donors, receivers, and availability. Built with Flask.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>Clean, responsive personal portfolio using HTML & CSS only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills-bars">
+      <div class="skill"><span>🐍 Python</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+      <div class="skill"><span>🌐 HTML & CSS</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+      <div class="skill"><span>🛠️ MySQL</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+      <div class="skill"><span>🔧 Git, VS Code</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+      <div class="skill"><span>⚙️ Flask</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <h2>Contact Me</h2>
+    <div class="contact-card">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> ziyad.official.a@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91-8248102824</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>📧 Email: <a href="mailto:ziyad.official.a@gmail.com">ziyad.official.a@gmail.com</a></p>
+      <p>📍 Location: Madurai, Tamil Nadu, India</p>
+      <p>© 2025 Ziyad A | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Navbar scroll color
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Show/hide back to top button
+      const backToTop = document.getElementById("backToTop");
+      backToTop.style.display = window.scrollY > 200 ? "block" : "none";
+    });
+
+    // Scroll to top
+    document.getElementById("backToTop").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Section fade-in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
