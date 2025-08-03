@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Ziyad's Portfolio</title>
-  <link rel="stylesheet" href="theme.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ziyad's Portfolio</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Standard Favicons -->
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="shortcut icon" href="favicon.ico">
+    <!-- Standard Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" />
 
-<!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-<!-- Android Icons -->
-<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <!-- Android Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png"/>
+  </head>
 
-</head>
-<body>
-
-  <!-- Header Navigation -->
-  <header>
-    <div class="navbar">
-      <div class="logo">Portfolio.</div>
-      <nav class="nav-links">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Home Section -->
-  <section class="hero fade-in" id="home">
-    <div class="hero-img">
-      <img src="photo.jpg" alt="Profile Photo" />
-    </div>
-    <div class="hero-text">
-      <h2>Hey I'm <span class="name">Ziyad</span></h2>
-      <p class="tagline">Aspiring Developer | B.Com(CA) Graduate</p>
-      <h3>I'm a <span class="highlight">Student</span></h3>
-      <p> A passionate web development enthusiast from Madurai. I hold a Bachelor's degree in Commerce with a specialization in Computer Applications from The American College. In the short term, I'm eager to join a reputed organization where I can apply my skills, continue learning, and make meaningful contributions. My long-term goal is to grow into a strong professional role where I can build a successful career while driving the growth and success of the organization I work with.</p>
-
-      <div class="social-icons">
-        <a href="https://github.com/ziyad-a-20" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/ziyad-a-324171366" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="https://instagram.com/sweetbuxxle" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-        <a href="mailto:ziyad.official.a@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+  <body>
+    <div class="scrollProgress"></div>
+    <!-- Header Navigation -->
+    <header>
+      <div class="navbar">
+        <div class="logo">Portfolio.</div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#home">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
+    </header>
 
-      <a href="ziyad_resume.pdf" class="btn view-btn" target="_blank">View Resume</a>
-      <a href="#contact" class="btn" style="margin-left: 10px;">Hire Me</a>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="section fade-in">
-    <h2>Education</h2>
-    <p><strong>Bachelor of Commerce in Computer Application</strong><br>The American College, 2023–2026</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section fade-in">
-    <h2>Projects</h2>
-    <div class="project-cards">
-      <div class="project-card">
-        <h3>📘 Library Management System</h3>
-        <p>Manage books, categories, and borrowing with Flask + MySQL.</p>
-        <a href="https://github.com/ziyad-a-20/Library-Management-System.git" target="_blank" class="project-btn">
-          <i class="fas fa-link"> View on GitHub</i>
-        </a>
+    <!-- About Section -->
+    <section class="hero fade-in" id="home">
+      <div class="hero-img">
+        <img src="photo.jpg" alt="Profile Photo" />
       </div>
-      <div class="project-card">
-        <h3>💉 Blood Donation Portal</h3>
-        <p>Track donors, receivers, and availability. Built with Flask.</p>
-      </div>
-      <div class="project-card">
-        <h3>🌐 Portfolio Website</h3>
-        <p>Clean, responsive personal portfolio using HTML & CSS only.</p>
-      </div>
-    </div>
-  </section>
+      <div class="hero-text">
+        <h2>Hey I'm <span class="name">Ziyad</span></h2>
+        <p class="tagline">Aspiring Developer | B.Com(CA) Graduate</p>
+        <h3>I'm a <span class="highlight">Student</span></h3>
+        <p>I’m a passionate web development enthusiast from Madurai, holding a Bachelor's degree in Commerce with a specialization in Computer Applications from The American College. I’m eager to contribute to a forward-thinking organization where I can apply my skills, continue learning, and make meaningful contributions.
 
-  <!-- Skills Section -->
-  <section id="skills" class="section fade-in">
-    <h2>Skills</h2>
-    <div class="skills-bars">
-      <div class="skill"><span>🐍 Python</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
-      <div class="skill"><span>🌐 HTML & CSS</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
-      <div class="skill"><span>🛠️ MySQL</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
-      <div class="skill"><span>🔧 Git, VS Code</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
-      <div class="skill"><span>⚙️ Flask</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
-    </div>
-  </section>
+My long-term goal is to grow into a strong professional role where I can build a successful career while actively supporting the organization's growth and success.</p>
 
+        <div class="social-icons">
+          <a href="https://github.com/ziyad-a-20" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/ziyad-a-324171366" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://instagram.com/sweetbuxxle" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="mailto:ziyad.official.a@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+
+        <a href="ziyad_resume.pdf" class="btn view-btn" target="_blank">View Resume</a>
+        <a href="#contact" class="btn" style="margin-left: 10px">Hire Me</a>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section fade-in">
+      <h2><i class="fas fa-graduation-cap" style="color: #3b2c24 ;font-size: 22px; margin-right: 10px;  margin-top: 10px;"></i> Education</h2>
+      <p>
+        <strong>Bachelor of Commerce in Computer Application</strong><br />The
+        American College<br>
+        2023-2026
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section fade-in glass">
+      <h2><i class="fas far fa-folder-open" style="color: #6c3f20;font-size: 22px; margin-right: 10px; margin-top: 10px;"></i>Projects</h2>
+      <div class="project-cards">
+        <div class="project-row">
+        <div class="project-card">
+          <h3><i class="fas fas fa-book" style="flex-shrink: 0;"></i>Library Manager</h3>
+          <p>Manage books, categories, borrowing & returning with Flask + MySQL.</p>
+        </div>
+        <div class="project-card">
+          <h3><i class="fas fa-tint"></i>Blood Connect</h3>
+          <p>Track donors, receivers, and availability. Built with Flask.</p>
+        </div>
+        </div>
+
+        <div class="project-row">
+        <div class="project-card">
+          <h3><i class="fas fa-shield-halved "></i>Tokyo Revenger Explorer</h3>
+          <p>Explore characters, episodes, and join gangs from the Tokyo Revengers universe. Built with Flask, MySQL, HTML, CSS & JS.</p>
+        </div>
+        <div class="project-card">
+          <h3><i class="fas fas fa-user"></i>Ziyad's Web Portfolio</h3>
+          <p>Clean, responsive personal portfolio using HTML & CSS only.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+<<<<<<< HEAD
   <!-- Contact Section -->
   <section id="contact" class="section fade-in">
     <h2>Contact Me</h2>
@@ -108,60 +112,214 @@
       <div class="contact-info">
 <!--         <p><i class="fas fa-envelope"></i> ziyad.official.a@gmail.com</p> -->
        
+=======
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-in glass">
+      <h2>
+        <i class="fas fa-gears" style="color: #3b2c24; font-size: 22px; margin-right: 10px; margin-bottom: 10px;"></i>Skills
+      </h2>
+      <div class="skills-bars">
+
+
+        <div class="skill">
+          <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20" style="vertical-align: middle; margin-right: 6px;"> Python</span>
+        <div class="bar-container">
+        <div class="bar"><div class="fill" data-percent="80"></div></div>
+        <span class="percent">80%</span>
+        </div>
+        </div>
+
+
+        <div class="skill">
+          <span><i class="devicon-html5-plain colored"></i> HTML</span>
+          <div class="bar-container">
+          <div class="bar"><div class="fill" data-percent="85"></div></div>
+          <span class="percent">85%</span>
+        </div>
+        </div>
+
+        <div class="skill">
+          <span><i class="devicon-css3-plain colored"></i> CSS</span>
+          <div class="bar-container">
+          <div class="bar"><div class="fill" data-percent="85"></div></div>
+          <span class="percent">85%</span>
+        </div>
+        </div>
+
+        <div class="skill">
+          <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+          <div class="bar-container">
+          <div class="bar"><div class="fill" data-percent="75"></div></div>
+          <span class="percent">75%</span>
+        </div>
+        </div>
+
+        <div class="skill">
+          <span><i class="devicon-git-plain colored"></i> Git & GitHub</span>
+          <div class="bar-container">
+          <div class="bar"><div class="fill" data-percent="65"></div></div>
+          <span class="percent">65%</span>
+        </div>
+        </div>
+
+        <div class="skill">
+          <span><i class="devicon-flask-original colored"></i> Flask</span>
+          <div class="bar-container">
+          <div class="bar"><div class="fill" data-percent="85"></div></div>
+          <span class="percent">85%</span>
+        </div>
+        </div>
+>>>>>>> 9c0341c (Update Portfolio)
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+    </section>
 
-  <!-- Back to Top Button -->
-  <button id="backToTop" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in glass">
+      <h2>
+        <i class="fas fa-envelope contact-icon"></i>Contact
+      </h2>
+      <div class="contact-card">
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send<i class="fas far fa-paper-plane send-icon"></i></button>
+        </form>
+      </div>
+    </section>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>📧 Email: <a href="mailto:ziyad.official.a@gmail.com">ziyad.official.a@gmail.com</a></p>
-      <p>📍 Location: Madurai, Tamil Nadu, India</p>
-      <p>© 2025 Ziyad A | All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
-  <!-- Scripts -->
-  <script>
-    // Navbar scroll color
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 10) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p><i class="fas fa-envelope"style="margin-right: 10px;"></i>
+          Email: 
+          <a href="mailto:ziyad.official.a@gmail.com">ziyad.official.a@gmail.com</a>
+        </p>
+        <p><i class="fas fas fa-map-marker-alt" style="margin-right: 10px;"></i>Location: Madurai, Tamil Nadu, India</p>
+        <p>&copy; 2025 Ziyad A | All rights reserved.</p>
+      </div>
+    </footer>
+
+<script>
+  // Navbar scroll behavior
+  window.addEventListener("scroll", () => {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 10) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+
+    // Show/hide back to top button
+    const backToTop = document.getElementById("backToTop");
+    backToTop.style.display = window.scrollY > 200 ? "block" : "none";
+  });
+
+  // Scroll to top
+  document.getElementById("backToTop").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Section fade-in animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
       }
-
-      // Show/hide back to top button
-      const backToTop = document.getElementById("backToTop");
-      backToTop.style.display = window.scrollY > 200 ? "block" : "none";
     });
+  }, { threshold: 0.1 });
 
-    // Scroll to top
-    document.getElementById("backToTop").addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+  document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+
+  // Skills bar animation with smooth percentage count-up
+  const skillsSection = document.querySelector("#skills");
+  const skillFills = document.querySelectorAll(".bar .fill");
+  const skillPercents = document.querySelectorAll(".percent");
+
+  const animateSkill = (fill, percentSpan, target) => {
+    let start = null;
+
+    // Reset both bar and percent
+    fill.style.width = "0%";
+    percentSpan.textContent = "0%";
+
+    const duration=600;
+    const animate = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percent = Math.min(progress / 10, target); // Adjust speed here
+      fill.style.width = percent + "%";
+      percentSpan.textContent = Math.floor(percent) + "%";
+
+      if (percent < target) {
+        requestAnimationFrame(animate);
+      } else {
+        fill.style.width = target + "%";
+        percentSpan.textContent = target + "%";
+      }
+    };
+
+    requestAnimationFrame(animate);
+  };
+
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        skillFills.forEach((fill, i) => {
+          const percent = parseInt(fill.getAttribute("data-percent"));
+          const percentSpan = skillPercents[i];
+          animateSkill(fill, percentSpan, percent);
+        });
+        skillObserver.disconnect();
+      }
     });
+  }, { threshold: 0.3 });
 
-    // Section fade-in animation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
+  skillObserver.observe(skillsSection);
 
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
-</body>
+// Section fade-in animation using .visible class
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
+      sectionObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll(".fade-in").forEach((el) => sectionObserver.observe(el));
+
+// scrolling animation
+window.addEventListener("scroll", () => {
+  const scrollProgress = document.getElementById("scrollProgress");
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = (scrollTop / docHeight) * 100;
+  scrollProgress.style.width = scrolled + "%";
+});
+
+ // Trigger animation when profile image scrolls into view
+  const heroImg = document.querySelector(".hero-img img");
+
+  const imageObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        heroImg.classList.add("animate-left");
+        imageObserver.unobserve(heroImg);
+      }
+    });
+  }, {
+    threshold: 0.5, // triggers when 50% is visible
+  });
+
+  imageObserver.observe(heroImg);
+</script>
+
+  </body>
 </html>
