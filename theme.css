@@ -2,6 +2,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 * {
@@ -18,6 +20,7 @@ body {
   scrollbar-width: thin;
   background-color: #7a5643;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 
@@ -284,6 +287,9 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease, transform 0.25s ease, background-color 0.3s ease,
     color 0.3s ease;
+      white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn:hover {
@@ -306,6 +312,7 @@ body {
 .section {
   background-color: #fdf6f1;
   padding: 60px 20px;
+
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -899,5 +906,145 @@ section.section:hover {
   }
   .project-card p {
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .skills-bars {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .bar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .percent {
+    align-self: flex-end;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .about-content,
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img,
+  .education-img img {
+    width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .contact-form button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .section {
+    padding: 50px 16px;
+  }
+}
+
+/* tablet specific breakpoint (600px and 768px) */
+@media (max-width: 680px) {
+  .hero-img img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+
+  .social-icons i {
+    font-size: 22px;
+    margin: 0 6px;
+  }
+
+  .nav-links ul {
+    gap: 10px;
+  }
+}
+/* Add Ultra-Small Screen Support (Below 360px) */
+@media (max-width: 360px) {
+  .hero-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .project-card {
+    padding: 14px;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer-content p {
+    font-size: 12px;
+  }
+}
+/*  Improve Navbar & Menu Icon Responsiveness */
+@media (max-width: 768px) {
+  .nav-links ul {
+    background-color: #7b5231;
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li a {
+    font-size: 16px;
   }
 }
